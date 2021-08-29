@@ -1,5 +1,6 @@
 import React from "react";
 import MovieDetails from "./movieDetails";
+import "../App.css";
 
 export default function Movie({ movieTitle }) {
   const movieData = MovieDetails[movieTitle];
@@ -7,11 +8,11 @@ export default function Movie({ movieTitle }) {
   const movieRating = movieData[1];
   const movieDescription = movieData[2];
   return (
-    <div>
+    <div className="movie-box">
       <img src={movieImageSource} alt={movieTitle} />
       <div>
-        <h2>{movieTitle}</h2>
-        <p>⭐ {movieRating}/10</p>
+        <h4>{movieTitle}</h4>
+        <p className="rating">⭐ {movieRating}/10</p>
         <p>{movieDescription}</p>
       </div>
     </div>

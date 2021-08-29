@@ -9,12 +9,12 @@ function App() {
   var currentGenreList = GenreDictionary[genre];
   return (
     <div className="App">
-      <h1>🎬 bestmovies 📽️</h1>
-      <h4>Checkout my favourite movies. Tap on any genre to get started</h4>
+      <h1>🎬 bestmovies</h1>
+      <p>Checkout my favourite movies. Tap on any genre to get started</p>
       <Genre setGenre={setGenre} />
       <hr />
       {currentGenreList.map((item) => {
-        return <Movie movieTitle={item} />;
+        return <Movie key={item} movieTitle={item} />;
       })}
     </div>
   );
