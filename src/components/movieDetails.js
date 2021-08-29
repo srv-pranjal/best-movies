@@ -19,10 +19,10 @@ var MovieDetails = {
     "9.2",
     "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
   ],
-  "Pulp Fiction": [
-    "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg",
-    "8.9",
-    "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+  "Fight Club": [
+    "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+    "8.8",
+    "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
   ],
   "Gangs of Wasseypur": [
     "https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Gangs_of_wasseypur.jpg/330px-Gangs_of_wasseypur.jpg",
