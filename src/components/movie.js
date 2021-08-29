@@ -1,18 +1,18 @@
 import React from "react";
+import MovieDetails from "./movieDetails";
 
-export default function Movie({movieTitle}) {
+export default function Movie({ movieTitle }) {
+  const movieData = MovieDetails[movieTitle];
+  const movieImageSource = movieData[0];
+  const movieRating = movieData[1];
+  const movieDescription = movieData[2];
   return (
     <div>
-      {/* <img src="" alt={movieTitle} /> */}
+      <img src={movieImageSource} alt={movieTitle} />
       <div>
         <h2>{movieTitle}</h2>
-        {/* <p>⭐ 9/10</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nam
-          ducimus error vero, modi asperiores repellendus doloribus neque nobis
-          tempora aut totam delectus, quam rerum velit vitae voluptatum
-          voluptate doloremque.
-        </p> */}
+        <p>⭐ {movieRating}/10</p>
+        <p>{movieDescription}</p>
       </div>
     </div>
   );
